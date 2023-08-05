@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./App.css";
 import DiaryEditor from "./DiaryEditor";
 import DiaryList from "./DiaryList";
+import MyComponent from "./component/SearchableSelectBox";
 
 // const dummyList = [
 //   {
@@ -54,6 +55,7 @@ function App() {
     <div className="App">
       <DiaryEditor onCreate={onCreate} />
       <DiaryList diaries={data} onEdit={onEdit} onRemove={onRemove} />
+      <MyComponent />
     </div>
   );
 }
